@@ -2,19 +2,19 @@
 
 /**
  *main - containing funct
- *Return: 0 if successful
+ *Return: 0 when successfull
  */
 
 int main(void)
 {
-	int i;
+	char i;
 
-	for (i = 48; i < 58; i++)
+	for (i = 'z'; i >= 'a'; i--)
 	{
-		putchar(i);
+	putchar(i)
 	}
 
-	putchar('\n');
+	putchar('\n')
 
 	return (0);
 }
