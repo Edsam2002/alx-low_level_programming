@@ -13,10 +13,10 @@ int main(void)
 	{
 	for (e = 48; e < 58; e++)
 	{
-	if (s != e; &&s < e)
+	if (s != e && s < e)
 	{
-	putchar(s);
-	putchar(e);
+	putchar (s);
+	putchar (e);
 	if (e == 57 && s == 56)
 	{
 	break;
