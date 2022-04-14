@@ -1,4 +1,5 @@
-nclude "main.h"
+#include "main.h"
+
 /**
  *  * mul -multiplies two integers
  *   *@a: print int
@@ -8,5 +9,5 @@ nclude "main.h"
 
 int mul(int a, int b)
 {
-	return (a * b);
+return (a * b);
 }
