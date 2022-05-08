@@ -6,9 +6,9 @@
  *
  * Return:always 0 (success)
  */
-int main (int argc, char *argv[])
+int main(int argc, char *argv[])
 {
 	(void) argv; /*dont use this ignore*/
 	printf("%d\n", argc - 1);
-	return 0;
-}	
+	return (0);
+}
