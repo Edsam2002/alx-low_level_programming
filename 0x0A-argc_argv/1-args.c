@@ -1,10 +1,9 @@
 #include <stdio.h>
 /**
- * main - print the number of arguments
- * @argc: count arguments
- * @arcv: arguments
- *
- * Return:always 0 (success)
+ *  * main - main funct
+ *   * @argc: param count
+ *    * @argv: param poiter
+ *     * Return: int
  */
 int main(int argc, char *argv[])
 {
