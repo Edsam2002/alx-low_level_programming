@@ -1,22 +1,23 @@
-#include <stdio.h>
 #include <stdlib.h>
+#include <stdio.h>
 
 /**
- *  * main - main funct
- *   * @argc: param count.
- *    * @argv: param pointer
- *     * Return: int
+ *  * main - prints the multiplication of two integers
+ *   * @argc: argument count
+ *    * @argv: argument vector
+ *     * Return: 0 if true, 1 if false
  */
 int main(int argc, char *argv[])
 {
-	/*stdlib was included because of the "atio()" function*/
-	/* the funct is used to covert str to int*/
-	/* because the argv is an arrays of characters*/
-	if (argc >= 10)
+	int a, b;
+
+	if (argc == 3)
 	{
+	a = atoi(argv[1]);
+	b = atoi(argv[2]);
+	printf("%d\n", a * b);
+	return (0);
+	}
 	printf("Error\n");
 	return (1);
-	}
-	printf("%d\n", atoi(argv[1]) * atoi(argv[2]));
-	return (0);
 }
