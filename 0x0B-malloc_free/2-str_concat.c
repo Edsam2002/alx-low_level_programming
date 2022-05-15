@@ -1,44 +1,41 @@
-#include <stdlib.h>
-#include <stdio.h>
 #include "main.h"
+#include <stdlib.h>
 
 /**
- *  * str_concat - concatenates two strings
- *   * @s1: string 1
- *    * @s2: string 2
- *     * Return: pointer to concatenated string
+ *  * str_concat - concat str
+ *   * @s1: param
+ *    * @s2: param
+ *     * Return: char
  */
-
 char *str_concat(char *s1, char *s2)
 {
-	char *concat;
-	int len1 = 0, len2 = 0, i = 0, j = 0;
+	char *str;
+	unsigned int i, j, k, l;
 
 	if (s1 == NULL)
 	s1 = "";
 	if (s2 == NULL)
 	s2 = "";
-	while (*(s1 + i))
-	len1++, i++;
-	while (*(s2 + j))
-	len2++, j++;
-	len2++;
 
-	concat = malloc(sizeof(char) * (len1 + len2));
+	for (i = 0; s1[i] != '\0'; i++)
+	;
 
-	if (concat == NULL)
+	for (j = 0; s2[j] != '\0'; j++)
+	;
+
+	str = malloc(sizeof(char) * (i + j + 1));
+
+	if (str == NULL)
+	{
+	free(str);
 	return (NULL);
+	}
 
-	i = 0, j = 0;
-	while (i < len1)
-	{
-	*(concat + i) = *(s1 + i);
-	i++;
-	}
-	while (j < len2)
-	{
-	*(concat + i) = *(s2 + j)
-	i++, j++;
-	}
-	return (concat);
+	for (k = 0; k < i; k++)
+	str[k] = s1[k];
+	l = j;
+	for (j = 0; j <= l; k++, j++
+	str[k] = s2[j];
+
+	return (str);
 }
