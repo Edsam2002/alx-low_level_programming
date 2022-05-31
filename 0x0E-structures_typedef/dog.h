@@ -6,7 +6,8 @@
  *    * @name: pointer prop
  *     * @owner: pointer prop
  */
-struct dog 
+
+struct dog
 {
 	char *name;
 	float age;
