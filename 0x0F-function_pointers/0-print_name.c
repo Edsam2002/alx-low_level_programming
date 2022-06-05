@@ -1,5 +1,4 @@
 #include <stdlib.h>
-#include "function_point.h"
 /**
  * print_name - prints a name
  * @name: name to print
