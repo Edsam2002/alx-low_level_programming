@@ -8,14 +8,14 @@
 
 unsigned int binary_to_uint(const char *b)
 {
-	int s , slen;
+	int i , slen;
 	int total =0;
 	int decval=1;
 
 	slen = strlen(b);
 
 	if (b == NULL)
-	return (not_binary);	
+	return (0);	
 
 	for (i = (slen -1); i >= 0; i--)
 	{
@@ -23,5 +23,5 @@ unsigned int binary_to_uint(const char *b)
 	decval*= 2;
 	}	
 
-	return total;
+	return (total);
 }
