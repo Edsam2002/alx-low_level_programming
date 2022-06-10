@@ -1,27 +1,29 @@
 #include "main.h"
 #include <string.h>
 /**
- * binary_to_uint - convert binary to unsigned int
- * @b: binary
+ * binary_to_unit - convert binary to unsigned int
  * Return: unsigned int
  */
-
-unsigned int binary_to_uint(const char *b)
+unsigned int binary_to_unit(const char *b)
 {
-	int i , slen;
-	int total =0;
-	int decval=1;
+	int i;
+	int slen;
+	int total = 0;
+	int decval = 1;
 
 	slen = strlen(b);
-
 	if (b == NULL)
-	return (0);	
+	return (0);
 
 	for (i = (slen -1); i >= 0; i--)
 	{
-	if (b[i] == '1')total += decval;
-	decval*= 2;
-	}	
+	if (b[i] == '1')total += decval
+	{
+	decval *= 2;
+	}
+	}
 
 	return (total);
+
 }
+
