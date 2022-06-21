@@ -6,13 +6,13 @@
  */
 size_t listint_len(const listint_t *h)
 {
-	unsigned int count;
-	const listint_t *point;
-	point = h;
+	size_t count;
+	const listint_t *point = h;
+	
 	while (point -> != NULL)
 	{
+	point = point->next;		
 	count++;
-	point = point->next;
 	}
 	return count;
 }
