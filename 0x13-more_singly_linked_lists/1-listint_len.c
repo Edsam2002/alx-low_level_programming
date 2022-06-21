@@ -6,8 +6,8 @@
  */
 size_t listint_len(const listint_t *h)
 {
-	int count;
-	listint_t *point;
+	unsigned int count;
+	const listint_t *point;
 	point = h;
 	while (point -> != NULL)
 	{
